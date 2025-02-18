@@ -121,7 +121,7 @@ const deleteimages = () => {
         },
     }).then(() => {
         alert("images deleted successfully..!");
-        DelBtn.style.display = "block";
+        DelBtn.style.display = "none";
         imgList.innerHTML = "";
         password.value = "";
     }
