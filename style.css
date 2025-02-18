@@ -13,7 +13,7 @@ body{
     display: none;
 }
 #submit-btn{
-    width: 10vw;
+    width: 200px;
     height: 3vw;
     background-color: #4CAF50;
     color: white;
@@ -28,7 +28,7 @@ body{
     }
 }
 #delete-btn{
-    width: 10vw;
+    width: 200px;
     height: 3vw;
     background-color: rgb(190, 74, 97);
     color: white;
@@ -44,7 +44,7 @@ body{
 }
 
 #get-img-btn{
-    width: 10vw;
+    width: 200px;
     height: 3vw;
     background-color: rgb(74, 120, 190);
     color: white;
