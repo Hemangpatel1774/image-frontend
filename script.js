@@ -50,7 +50,7 @@ const SubmitImgs = () => {
         alert("Password should be of 4 digits")
         return
     }
-    fetch("https://image-server-omega.vercel.app/img", {
+    fetch("https://image-hxp.vercel.app/img", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -69,6 +69,9 @@ const SubmitImgs = () => {
             console.log(res);
 
         }
+    }).catch((error) => {
+        console.error('Error:', error);
+        alert("Something went wrong, please try again later")
     });
 }
 
@@ -81,7 +84,7 @@ const getMyImage = () => {
         alert("Password should be of 4 digits")
         return
     }
-    fetch(`https://image-server-omega.vercel.app/getimg/${password.value}`, {
+    fetch(`https://image-hxp.vercel.app/getimg/${password.value}`, {
         method: "GET",
         // headers: {
         //     "Content-Type": "application/json",
@@ -113,7 +116,7 @@ const deleteimages = () => {
         alert("Password should be of 4 digits")
         return
     }
-    fetch(`https://image-server-omega.vercel.app/deleteimg/${password.value}`, {
+    fetch(`https://image-hxp.vercel.app/deleteimg/${password.value}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
