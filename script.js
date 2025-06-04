@@ -50,7 +50,6 @@ const SubmitImgs = () => {
         alert("Password should be of 4 digits")
         return
     }
-    alert("password is require for Download Images..🫡 [ REMENBER IT ] ")
     fetch("https://image-server-omega.vercel.app/img", {
         method: "POST",
         headers: {
